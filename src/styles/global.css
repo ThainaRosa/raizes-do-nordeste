@@ -1,0 +1,32 @@
+:root {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #2d3227;
+  background: #faf7f0;
+  font-synthesis: none;
+  --barro: #a44229;
+  --barro-escuro: #81321e;
+  --verde: #283f32;
+  --muted: #64675c;
+  --linha: #e3ddcf;
+  --areia: #f0e8d8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, select, input, textarea { font: inherit; }
+button, a, select { -webkit-tap-highlight-color: transparent; }
+button, select { cursor: pointer; }
+h1, h2, h3, p { margin-top: 0; }
+h2, h3 { text-wrap: balance; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--barro); outline-offset: 4px; }
+.app { min-height: 100vh; }
+.eyebrow { font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; color: var(--barro); }
+.painel { background: #fffefa; border: 1px solid var(--linha); border-radius: 18px; padding: 1.25rem; }
+.mode, .unidade { display: flex; flex-direction: column; gap: .5rem; font-size: .78rem; font-weight: 650; }
+select, input, textarea { width: 100%; min-width: 0; min-height: 48px; background: #fffefa; border: 1px solid #b2b4a5; border-radius: 10px; padding: .7rem .85rem; color: #2d3227; }
+select:hover, input:hover, textarea:hover { border-color: var(--verde); }
+.botao { display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem; min-height: 48px; padding: .85rem 1.25rem; border: 1px solid transparent; border-radius: 9px; font-weight: 650; text-decoration: none; transition: background .2s, transform .2s; }
+.botao-primario { background: var(--barro); color: white; }
+.botao-primario:hover { background: var(--barro-escuro); transform: translateY(-2px); }
+button:disabled { opacity: .55; cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }

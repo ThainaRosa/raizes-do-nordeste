@@ -1,0 +1,30 @@
+.header { flex-wrap: wrap; }
+.identidade-usuario { order: 5; display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1.25rem; width: 100%; padding-top: .75rem; border-top: 1px solid var(--linha); font-size: .8rem; }
+.identidade-usuario > span:first-child { color: var(--muted); }
+.identidade-usuario .botao { background: var(--areia); color: var(--verde); }
+.usuario-identificacao { display: flex; align-items: center; flex-wrap: wrap; gap: .4rem; overflow-wrap: anywhere; }
+.usuario-identificacao strong { overflow-wrap: anywhere; }
+.perfil-etiqueta { display: inline-block; background: #edf2e9; color: var(--verde); border-radius: 20px; padding: .35rem .65rem; font-size: .75rem; font-weight: 650; }
+.acesso-pagina h2 { font: 500 2rem Georgia, serif; color: var(--verde); }
+.acesso-pagina p { line-height: 1.7; }
+.acesso-grid { display: grid; gap: 1.25rem; align-items: start; }
+.acesso-grid > * { min-width: 0; }
+.formulario-acesso { display: grid; gap: 1.25rem; }
+.formulario-acesso p { margin-bottom: 0; }
+.campo-formulario { display: grid; gap: .5rem; }
+.campo-formulario label { font-size: .85rem; font-weight: 650; }
+.campo-formulario label span { font-size: .75rem; font-weight: 400; }
+.campo-formulario small { color: var(--muted); line-height: 1.6; }
+.campo-formulario .mensagem-erro { font-size: .8rem; margin: 0; }
+.campo-formulario [aria-invalid="true"] { border-color: #a44229; border-width: 2px; }
+.formulario-erro { padding: 1rem; background: #fbeee5; border: 1px solid #b45a3d; border-radius: 10px; }
+.cadastro-formulario { max-width: 620px; }
+.conta-demo { width: 100%; flex-direction: column; align-items: start; gap: .35rem; padding: 1rem; background: var(--areia); color: var(--verde); margin-bottom: .75rem; text-align: left; }
+.conta-demo span { font-size: .75rem; font-weight: 400; overflow-wrap: anywhere; }
+.contas-demo p { font-size: .85rem; color: var(--muted); }
+.conta-resumo { display: grid; gap: 1.25rem; max-width: 740px; }
+.conta-resumo > .perfil-etiqueta { justify-self: start; }
+.conta-email { overflow-wrap: anywhere; }
+.conta-resumo li, .acesso-pagina li { line-height: 1.8; }
+.modo-totem .formulario-acesso input { min-height: 60px; font-size: 1.05rem; }
+@media (min-width: 800px) { .acesso-grid { grid-template-columns: 1fr 1fr; } .modo-mobile .acesso-grid { grid-template-columns: 1fr; } }

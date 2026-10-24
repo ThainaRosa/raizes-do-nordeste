@@ -1,0 +1,17 @@
+.beneficios-pagina { display: grid; gap: 1.5rem; }
+.beneficios-pagina h2 { font: 500 2rem Georgia, serif; color: var(--verde); }
+.beneficios-pagina p, .beneficios-carrinho p { line-height: 1.7; }
+.beneficios-carrinho { margin-top: 1.5rem; }
+.cupom-formulario { display: flex; flex-wrap: wrap; gap: .75rem; align-items: end; }
+.cupom-formulario label { display: grid; gap: .5rem; flex: 1 1 180px; font-size: .85rem; }
+.beneficios-carrinho > .botao, .grid-beneficios .botao { background: var(--areia); color: var(--verde); }
+.grid-beneficios { display: grid; gap: 1rem; }
+.grid-beneficios > article { min-width: 0; display: flex; flex-direction: column; align-items: start; }
+.grid-beneficios h3, .grid-beneficios h4 { margin: 1rem 0 .5rem; font: 600 1.3rem Georgia, serif; color: var(--verde); }
+.grid-beneficios code { display: block; background: var(--areia); padding: .6rem .85rem; border-radius: 6px; margin-bottom: 1rem; letter-spacing: .1em; }
+.grid-beneficios .botao { margin-top: auto; width: 100%; }
+.grid-beneficios .botao-primario { background: var(--barro); color: white; }
+.saldo-pontos { font: 600 2.1rem Georgia, serif; color: var(--verde); }
+.beneficios-pagina li { line-height: 1.8; overflow-wrap: anywhere; }
+.beneficio-pedido { border-left: 3px solid var(--barro); padding: .5rem 1rem; margin: 1rem 0; line-height: 1.7; }
+@media (min-width: 850px) { .grid-beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); } .modo-mobile .grid-beneficios { grid-template-columns: 1fr; } }

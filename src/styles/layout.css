@@ -1,0 +1,21 @@
+.header { background: #fffefa; padding: 1.1rem max(1rem, calc((100vw - 1160px) / 2)); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.1rem; border-bottom: 1px solid var(--linha); }
+.marca { display: flex; align-items: center; gap: .8rem; text-decoration: none; }
+.marca-simbolo { position: relative; width: 48px; height: 54px; display: grid; place-items: center; border: 1px solid var(--barro); border-radius: 24px 24px 8px 8px; color: var(--barro); font: bold 1.1rem Georgia, serif; }
+.marca-simbolo span { position: absolute; top: -10px; right: -7px; background: #fffefa; font-size: 1.3rem; }
+.marca-legenda { display: block; font-size: .5rem; letter-spacing: .13em; font-weight: 700; color: var(--muted); }
+.header h1 { font: bold 1.25rem Georgia, serif; margin: .3rem 0 0; color: var(--verde); }
+.header h1 span { display: block; }
+.header nav { order: 3; width: 100%; border-top: 1px solid var(--linha); padding-top: .5rem; }
+.menu-link { display: inline-flex; align-items: center; gap: 1.5rem; min-height: 44px; text-decoration: none; font-size: .85rem; font-weight: 650; }
+.menu-link:hover { color: var(--barro); }
+.mode { width: 100%; }
+.conteudo { width: min(100% - 2rem, 1160px); margin: 1.25rem auto 2.5rem; display: grid; gap: 2.5rem; }
+.conteudo > * { min-width: 0; }
+footer { text-align: center; font-size: .75rem; line-height: 1.8; padding: 2rem 1rem; color: var(--muted); border-top: 1px solid var(--linha); }
+.modo-mobile .conteudo { max-width: 480px; }
+.modo-totem .conteudo { max-width: 1250px; }
+.modo-totem select, .modo-totem button, .modo-totem .menu-link { min-height: 60px; font-size: 1.05rem; }
+.modo-totem .produto h3 { font-size: 1.5rem; }
+.modo-totem .produto-corpo { padding: 1.5rem; }
+@media (min-width: 400px) { .mode { width: auto; min-width: 115px; } }
+@media (min-width: 800px) { .header { flex-wrap: wrap; padding-top: 1.3rem; padding-bottom: 1.3rem; } .header nav { order: initial; width: auto; border: 0; padding: 0; } .header h1 { font-size: 1.5rem; } .marca-legenda { font-size: .58rem; } .conteudo { margin-top: 2rem; gap: 3.5rem; } }

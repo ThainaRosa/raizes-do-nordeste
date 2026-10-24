@@ -1,0 +1,29 @@
+.fila-cozinha, .painel-gerente, .privacidade-pagina { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+.fila-cozinha > *, .painel-gerente > *, .privacidade-pagina > * { min-width: 0; }
+.fila-cozinha h2, .painel-gerente h2, .privacidade-pagina h2 { font: 500 1.9rem Georgia, serif; color: var(--verde); }
+.fila-cozinha p, .painel-gerente p, .privacidade-pagina p { line-height: 1.7; }
+.unidade-operacional { max-width: 360px; }
+.itens-preparo { padding-left: 1.3rem; margin: 1rem 0; }
+.itens-preparo li { line-height: 1.8; }
+.indicadores-operacionais { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 0; }
+.indicadores-operacionais > div { background: #fffefa; border: 1px solid var(--linha); border-radius: 12px; padding: 1rem; min-width: 0; }
+.indicadores-operacionais dt { font-size: .8rem; line-height: 1.6; color: var(--muted); }
+.indicadores-operacionais dd { margin: .5rem 0 0; font: 600 1.45rem Georgia, serif; color: var(--verde); overflow-wrap: anywhere; }
+.tabela-operacional { max-width: 100%; overflow-x: auto; }
+.tabela-operacional table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: .85rem; }
+.tabela-operacional caption { text-align: left; padding: .75rem 0; color: var(--muted); }
+.tabela-operacional th, .tabela-operacional td { text-align: left; padding: .85rem; border-bottom: 1px solid var(--linha); }
+.tabela-operacional thead { background: var(--areia); }
+.rodape-links { display: flex; justify-content: center; padding-top: .65rem; }
+.rodape-links a { display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: 3px; }
+.finalidades-dados > div { padding: 1rem 0; border-bottom: 1px solid var(--linha); }
+.finalidades-dados dt { font-weight: 700; color: var(--verde); line-height: 1.7; }
+.finalidades-dados dd { margin: .5rem 0 0; font-size: .9rem; }
+.preferencias-formulario fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.preferencias-formulario legend { font-weight: 700; line-height: 1.7; }
+.preferencia-opcao { display: flex; gap: 1rem; padding: 1.1rem; border: 1px solid var(--linha); border-radius: 10px; margin: 1rem 0; align-items: flex-start; cursor: pointer; }
+.preferencia-opcao input { width: 22px; height: 22px; min-height: 0; flex-shrink: 0; margin: .2rem 0 0; accent-color: var(--verde); }
+.preferencia-opcao small { display: block; color: var(--muted); line-height: 1.7; margin-top: .5rem; }
+.preferencias-formulario > [role="status"]:empty { display: none; }
+.modo-totem .preferencia-opcao input { width: 28px; height: 28px; }
+@media (min-width: 850px) { .indicadores-operacionais { grid-template-columns: repeat(4, minmax(0, 1fr)); } .modo-mobile .indicadores-operacionais { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
